@@ -2,6 +2,8 @@
 Endereço Rápido
 </h1>
 
+<br>
+
 <p align="center">
 O Endereço Rápido é um projeto simples que busca informações de endereço a partir de um CEP. Ele utiliza React para a interface e uma API pública para buscar as informações.
 </p>
@@ -56,7 +58,7 @@ Para instalar o Endereço Rápido, siga os seguintes passos:
 
 <br>
 
-## 📖 Como usar
+## Como usar
 
 1. Digite o CEP desejado no campo de entrada.
 2. Clique no botão de busca ou pressione Enter.
@@ -64,7 +66,7 @@ Para instalar o Endereço Rápido, siga os seguintes passos:
 
 <br>
 
-## 📝 Como contribuir
+## Como contribuir
 
 Contribuições são sempre bem-vindas! Para contribuir, siga estes passos:
 
@@ -76,7 +78,7 @@ Contribuições são sempre bem-vindas! Para contribuir, siga estes passos:
 
 <br>
 
-## 🗒 Arquivos importantes
+## Arquivos importantes
 
 - App.js: contém a lógica da aplicação e a interface do usuário.
 - services/api.js: contém a configuração da chamada à API.
