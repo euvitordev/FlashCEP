@@ -44,7 +44,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Este projeto é um aplicativo web desenvolvido com React, uma biblioteca JavaScript para construir interfaces de usuário. Ele permite que os usuários pesquisem informações de endereço a partir de um CEP fornecido. O usuário pode digitar o CEP desejado no campo de entrada e clicar no botão de busca. Se o CEP for válido, as informações de endereço, como logradouro, complemento, bairro, localidade e uf, serão exibidas na tela. Ele usa uma chamada de API para buscar informações de CEP de uma API externa. Além disso, ele usa também arquivo CSS para estilizar sua interface. O projeto está disponível no Github para uso e contribuição.
 
-- [Acesse o projeto finalizado, online](Em breve)
+- [Acesse o projeto finalizado, online](https://endereco-rapido.vercel.app/)
 
 <br>
 
