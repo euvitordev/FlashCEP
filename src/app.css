@@ -48,6 +48,11 @@
   color: var(--text-color);
   outline: none;
   margin-right: 8px;
+  transition: 1s ease-in;
+}
+
+.containerInput:hover {
+  border-radius: 12px;
 }
 
 .containerInput input::placeholder {
@@ -73,7 +78,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 400px;
+  width: 450px;
   padding: 24px;
 
   background: rgba(255, 255, 255, 0.06);
@@ -98,4 +103,33 @@
   .title{
     font-size: 52px;
   }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+  width: 100%;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+footer p {
+  transition: transform 1s;
+}
+
+footer p:hover {
+  transform: scale(1.2);
+}
+
+footer a {
+  color: #8b5cf6;
+  text-decoration: none;
 }

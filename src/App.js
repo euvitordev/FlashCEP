@@ -1,12 +1,30 @@
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './app.css';
+import api from './services/api';
+
 function App() {
 
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState('');
+  const [cep, setCep] = useState({});
 
-  function handleSearch(){
-    alert('teste')
+  async function handleSearch(){
+
+    if(input === ''){
+      alert('Preencha algum cep!')
+      return;
+    }
+
+    try{
+      const response = await api.get(`${input}/json`);
+      setCep(response.data);
+      setInput("");
+    }
+    catch{
+      alert('Erro ao buscar');
+      setInput("")
+    }
+
   }
 
   return (
@@ -25,14 +43,22 @@ function App() {
         </button>
       </div>
 
-      <main className='main'>
-        <h2>CEP: 27351-729</h2>
-        <span>Rua teste</span>
-        <span>Complemento: Algum compremento</span>
-        <span>Colonia</span>
-        <span>Barra Mansa - RJ</span>
-
-      </main>
+      {Object.keys(cep).length > 0 && (
+        <main className='main'>
+          <h2>CEP: {cep.cep} </h2>
+          <span>Logradouro: {cep.logradouro}</span>
+          <span>Complemento: {cep.complemento}</span>
+          <span>Bairro: {cep.bairro}</span>
+          <span>Localidade: {cep.localidade} - {cep.uf}</span>
+          <span>ddd: {cep.ddd}</span>
+        </main>
+      )}
+      <footer>
+        <p>
+          Feito com ❤️ por
+          <a href="https://github.com/euvitordev"> Vitor Lucas</a>
+        </p>
+      </footer>
     </div>
   );
 }
