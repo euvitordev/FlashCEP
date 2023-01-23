@@ -1,71 +1,124 @@
-# Getting Started with Create React App
+<h1 align="center">
+Endereço Rápido
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+O Endereço Rápido é um projeto simples que busca informações de endereço a partir de um CEP. Ele utiliza React para a interface e uma API pública para buscar as informações.
+</p>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>
+</p>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <img alt="projeto Endereço Rápido" src="./public/projeto.png" width="100%">
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm run build`
+- React
+- React-icons
+- useState
+- API externa
+- CSS
+- Google Fonts para fontes
+- Arquivos de favicon
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este projeto é um aplicativo web desenvolvido com React, uma biblioteca JavaScript para construir interfaces de usuário. Ele permite que os usuários pesquisem informações de endereço a partir de um CEP fornecido. O usuário pode digitar o CEP desejado no campo de entrada e clicar no botão de busca. Se o CEP for válido, as informações de endereço, como logradouro, complemento, bairro, localidade e uf, serão exibidas na tela. Ele usa uma chamada de API para buscar informações de CEP de uma API externa. Além disso, ele usa também arquivo CSS para estilizar sua interface. O projeto está disponível no Github para uso e contribuição.
 
-### `npm run eject`
+- [Acesse o projeto finalizado, online](Em breve)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instalação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para instalar o Endereço Rápido, siga os seguintes passos:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone o repositório para sua máquina local com: git clone https://github.com/seuusername/endereco-rapido.git
+2. Instale as dependências do projeto com "npm install"
+3. Inicie o aplicativo com "npm start"
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📖 Como usar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Digite o CEP desejado no campo de entrada.
+2. Clique no botão de busca ou pressione Enter.
+3. Se o CEP for válido, as informações de endereço serão exibidas na tela.
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Como contribuir
 
-### Analyzing the Bundle Size
+Contribuições são sempre bem-vindas! Para contribuir, siga estes passos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Faça um fork do repositório.
+2. Crie uma nova branch para as suas alterações (git checkout -b minhas-alteracoes)
+3. Salve suas alterações e faça um commit (git commit -am 'Adicionando minhas alterações')
+4. Envie suas alterações (git push origin minhas-alteracoes)
+5. Crie uma nova solicitação de pull request.
 
-### Making a Progressive Web App
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🗒 Arquivos importantes
 
-### Advanced Configuration
+- App.js: contém a lógica da aplicação e a interface do usuário.
+- services/api.js: contém a configuração da chamada à API.
+- app.css: contém o estilo da aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br>
 
-### Deployment
+## Dependências
+- react: biblioteca para construção de interfaces.
+- react-icons: pacote de ícones para o botão de busca.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
 
-### `npm run build` fails to minify
+## API
+- Este projeto utiliza a API pública <a href="https://viacep.com.br/" target="_blank">ViaCEP</a> para buscar as informações de endereço.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# EnderecoRapido
+<br>
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
+
+<br>
+
+## Créditos
+
+Este projeto foi desenvolvido por <a href="https://www.linkedin.com/in/euvtitordev/" target="_blank">Vitor Lucas</a>
+
+<br>
+
+## Contato
+
+Se tiver alguma dúvida ou sugestão, entre em contato através do <a href="mailto:dev.vitorlucas@gmail.com" target="_blank">e-mail.</a>
+
+<br>
+
+<p align="center">
+<a href="https://instagram.com/euvitordev" target="_blank">Instagram</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/euvitordev" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="https://linkedin.com/in/euvtitordev" target="_blank">LinkedIn</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="https://www.youtube.com/channel/UCgLnCW07t-4-y9YgDwI6bSw" target="_blank">Youtube</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="https://discord.gg/rm3sDKjf69" target="_blank">Discord</a>
+</p>
+<br>
+<p align="center">Feito com ❤ por  <a href="https://www.linkedin.com/in/euvtitordev/" target="_blank">Vitor Lucas</a></p>
