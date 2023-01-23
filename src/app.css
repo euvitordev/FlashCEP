@@ -1,9 +1,101 @@
+:root {
+  --background: #09090a;
+  --conponet-color: #8b5cf6;
+  --text-color: #ffffff;
+  --border: #8b5cf6;
+  --set-color: #16a34a;
+  --highlight-color-hover: rgba(255, 255, 255, 0.2);
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background: #09090a;
+  background: var(--background);
   color: #fff;
+}
+
+.title {
+ font-size: 85px;
+ color: var(--text-color); 
+ animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.containerInput {
+  background-color: var(--highlight-color-hover);
+  padding: 15px;
+  margin: 42px 0;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.containerInput input {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: var(--text-color);
+  outline: none;
+  margin-right: 8px;
+}
+
+.containerInput input::placeholder {
+  color: #f1f1f1;
+}
+
+.buttonSearch {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.buttonSearch:hover {
+  transform: scale(1.2);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  padding: 24px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.main h2 {
+  margin: 16px 0;
+  font-size: 40px;
+}
+
+.main span {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+
+@media(max-width: 700px){
+  .title{
+    font-size: 52px;
+  }
 }
