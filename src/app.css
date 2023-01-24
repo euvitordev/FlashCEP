@@ -52,7 +52,6 @@ main {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  width: 600px;
   height: 100vh;
   padding: 24px;
 }
@@ -221,13 +220,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   bottom: 0;
-  width: 600px;
+  width: 500px;
   padding: 25px;
   gap: 25px;
   font-size: 14px;
-  background-color: var(--background);
   border-top: 1px solid rgb(208, 215, 222);
 }
 
@@ -257,9 +254,6 @@ footer a:hover {
 
 /* responsividade */
 @media (max-width: 500px) {
-  main {
-    width: 380px;
-  }
   /* container */
 
   .title {
@@ -301,7 +295,7 @@ footer a:hover {
   }
   footer .footerLogo {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
   }
 }
 
