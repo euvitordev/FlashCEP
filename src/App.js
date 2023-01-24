@@ -29,7 +29,6 @@ function App() {
       alert('Erro ao buscar');
       setInput("")
     }
-
   }
 
   return (
@@ -63,7 +62,10 @@ function App() {
       
       {Object.keys(cep).length > 0 && (
         <main className='main'>
-          <CopyToClipboard text={enderecoCompleto} onCopy={() => alert('Endereço copiado para a área de transferência!')}>
+          <CopyToClipboard text={enderecoCompleto} onCopy={() => {
+            alert('Endereço copiado para a área de transferência!');
+            setCep({});
+            }}>
             <span className='copyIcon'>
               <MdContentCopy size={25} color="#FFF"/>
             </span>
