@@ -127,7 +127,7 @@
 
 .main {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   padding: 0 48px;
@@ -162,13 +162,6 @@
 .main span {
   margin-bottom: 16px;
   font-weight: bold;
-}
-
-
-@media(max-width: 700px){
-  .title{
-    font-size: 52px;
-  }
 }
 
 footer {
@@ -206,4 +199,41 @@ footer a {
 
 footer a:hover{
   text-decoration: underline;
+}
+
+/* responsividade */
+@media(max-width: 500px){
+  /* container */
+  .card{
+    width: 380px;
+  }
+  .title{
+    font-size: 42px;
+  }
+  .subTitle{
+    font-size: 14px;
+  }
+  .containerInput{
+    width: 300px;
+  }
+  .containerInput input {
+    width: 300px;
+  }
+  .buttonSearch{
+    position: absolute;
+    right: 60px;
+  }
+
+  /* main */
+  .main{
+    display: flex;
+    align-items: flex-start;
+    width: 380px;
+  }
+  .main h2{
+    font-size: 32px;
+  }
+  .main span{
+    font-size: 14px;
+  }
 }
