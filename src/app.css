@@ -236,4 +236,10 @@ footer a:hover{
   .main span{
     font-size: 14px;
   }
+
+  /* footer */
+  footer{
+    position: relative;
+    background-color: #09090a;
+  }
 }
