@@ -226,9 +226,8 @@ footer a:hover{
 
   /* main */
   .main{
-    display: flex;
-    align-items: flex-start;
     width: 380px;
+    margin-bottom: 250px;
   }
   .main h2{
     font-size: 32px;
@@ -239,7 +238,7 @@ footer a:hover{
 
   /* footer */
   footer{
-    position: relative;
+    bottom: 0;
     background-color: #09090a;
   }
 }
