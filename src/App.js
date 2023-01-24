@@ -20,8 +20,11 @@ function App() {
       return;
     }
 
+    //Remover traço do CEP
+    const cepSemTraco = input.replace(/-/g,'');
+
     try{
-      const response = await api.get(`${input}/json`);
+      const response = await api.get(`${cepSemTraco}/json`);
       setCep(response.data);
       setInput("");
     }
