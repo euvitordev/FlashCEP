@@ -1,5 +1,5 @@
 <h1 align="center">
-Endereço Rápido
+FlashCEP
 </h1>
 
 <br>
@@ -21,7 +21,7 @@ O Endereço Rápido é um projeto simples que busca informações de endereço a
 <br>
 
 <p align="center">
-  <img alt="projeto Endereço Rápido" src="./public/projeto.png" width="100%">
+  <img alt="projeto FlashCEP" src="./public/projeto.png" width="100%">
 </p>
 
 <br>
@@ -32,11 +32,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - React
 - React-icons
+- react-copy-to-clipboard
+- react-icons
+- axios
 - useState
 - API externa
 - CSS
 - Google Fonts para fontes
-- Arquivos de favicon
 
 <br>
 
@@ -44,13 +46,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Este projeto é um aplicativo web desenvolvido com React, uma biblioteca JavaScript para construir interfaces de usuário. Ele permite que os usuários pesquisem informações de endereço a partir de um CEP fornecido. O usuário pode digitar o CEP desejado no campo de entrada e clicar no botão de busca. Se o CEP for válido, as informações de endereço, como logradouro, complemento, bairro, localidade e uf, serão exibidas na tela. Ele usa uma chamada de API para buscar informações de CEP de uma API externa. Além disso, ele usa também arquivo CSS para estilizar sua interface. O projeto está disponível no Github para uso e contribuição.
 
-- [Acesse o projeto finalizado, online](https://endereco-rapido.vercel.app/)
+- [Acesse o projeto](https://flashcep.vercel.app/)
 
 <br>
 
 ## Instalação
 
-Para instalar o Endereço Rápido, siga os seguintes passos:
+Para instalar o FlashCEP, siga os seguintes passos:
 
 1. Clone o repositório para sua máquina local com: git clone https://github.com/seuusername/endereco-rapido.git
 2. Instale as dependências do projeto com "npm install"
@@ -86,9 +88,9 @@ Contribuições são sempre bem-vindas! Para contribuir, siga estes passos:
 
 <br>
 
-## Dependências
-- react: biblioteca para construção de interfaces.
-- react-icons: pacote de ícones para o botão de busca.
+## Adições
+
+1. Adicionado a possibilidade de copiar o endereço inteiro para a área de transferência do usuário.
 
 <br>
 
