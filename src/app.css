@@ -17,10 +17,62 @@
   color: #fff;
 }
 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgba(43, 43, 48, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+
+  padding: 0 48px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 70px 0;
+}
+
+.place{
+  animation: flipLogo 5s infinite;
+}
+
+@keyframes flipLogo {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.card img {
+  width: 200px;
+}
+
 .title {
- font-size: 85px;
- color: var(--text-color); 
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 125%;
+  margin-bottom: 15px;
+
  animation: flipTitle 2s;
+}
+
+.subTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 @keyframes flipTitle {
@@ -33,12 +85,17 @@
 }
 
 .containerInput {
-  background-color: var(--highlight-color-hover);
+  background-color: #27272a96;
   padding: 15px;
   margin: 42px 0;
   display: flex;
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: 1s ease-in;
+}
+
+.containerInput:hover {
+  border-radius: 12px;
 }
 
 .containerInput input {
@@ -48,11 +105,6 @@
   color: var(--text-color);
   outline: none;
   margin-right: 8px;
-  transition: 1s ease-in;
-}
-
-.containerInput:hover {
-  border-radius: 12px;
 }
 
 .containerInput input::placeholder {
@@ -78,14 +130,28 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 450px;
-  padding: 24px;
+  padding: 0 48px;
+  margin-top: 25px;
 
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(112, 112, 126, 0.09);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+}
+
+.copyIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.copyIcon:hover {
+  border-radius: 8px;
+  background-color: #27272a96;
 }
 
 .main h2 {
@@ -113,23 +179,31 @@ footer {
   bottom: 0;
   padding: 25px;
   width: 100%;
+  gap: 25px;
+  font-size: 14px;
+}
 
-  font-family: "Inter";
+footer .footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .footerLogo span {
+  /* font-family: "Inter"; */
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-}
-
-footer p {
-  transition: transform 1s;
-}
-
-footer p:hover {
-  transform: scale(1.2);
+  font-size: 14px;
+  color: #f1f1f1;
+  line-height: 1.5;
+  opacity: .8;
 }
 
 footer a {
-  color: #8b5cf6;
+  color: rgb(9, 105, 218);
   text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
 }
