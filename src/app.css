@@ -255,7 +255,6 @@ footer a:hover {
 /* responsividade */
 @media (max-width: 500px) {
   /* container */
-
   .title {
     font-size: 42px;
   }
@@ -273,29 +272,23 @@ footer a:hover {
     right: 125px;
   }
 
-  /* main */
-  /* .main{
-    width: 380px;
-    margin-bottom: 200px;
-  }
-  .main h2{
-    font-size: 32px;
-  }
-  .main span{
-    font-size: 14px;
-  } */
-
   /* footer */
   footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 380px;
   }
-  footer a {
-    margin-bottom: 30px;
-  }
   footer .footerLogo {
-    position: absolute;
-    bottom: 5px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    order: 1;
+  }
+  footer a {
+    order: 0;
   }
 }
 
