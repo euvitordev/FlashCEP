@@ -20,11 +20,14 @@ function App() {
       return;
     }
 
+    //Remover espaços em branco do início e final do CEP
+    let cepSemEspaco = input.trim();
+
     //Remover traço do CEP
-    const cepSemTraco = input.replace(/-/g,'');
+    cepSemEspaco = cepSemEspaco.replace(/-/g,'');
 
     try{
-      const response = await api.get(`${cepSemTraco}/json`);
+      const response = await api.get(`${cepSemEspaco}/json`);
       setCep(response.data);
       setInput("");
     }
